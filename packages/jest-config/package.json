@@ -1,9 +1,9 @@
 {
-  "name": "@repo/typescript-config",
+  "name": "@repo/jest-config",
   "version": "0.0.0",
   "private": true,
   "files": [
-    "codegen.ts"
+    "jest-next.js"
   ],
   "license": "MIT",
   "publishConfig": {

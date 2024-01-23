@@ -1,5 +1,6 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NEXT_PUBLIC_GRAPHQL_API"],
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "build": {
@@ -11,7 +12,12 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true
-    }
+      "persistent": true,
+      "dotEnv": [".env.development"]
+    },
+    "test": {
+      "outputs": ["coverage/**"]
+    },
+    "test:update": {}
   }
 }
